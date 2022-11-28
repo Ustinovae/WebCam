@@ -1,0 +1,24 @@
+﻿<div>
+  <div class="col">
+
+    <input [(ngModel)]="currentUser" required placeholder="UserName" type="text">
+  </div>
+  <div>
+    <button (click)="saveUsername()" type="button">Save</button>
+  </div>
+  <div>
+    <button (click)="saveUsernameOnMobile()" type="button">Save on mobile</button>
+  </div>
+  <div>
+    <button (click)="onUserSelected(otherUser)" type="button">Create</button>
+  </div>
+  <div>
+    <div>You Video</div>
+    <video #ourVideoPlayer width="320" height="240"></video>
+  </div>
+  <div>
+    <div>Other video</div>
+    <video #otherVideoPlayer width="320" height="240" controls></video>
+  </div>
+
+</div>
